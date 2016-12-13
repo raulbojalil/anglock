@@ -1,0 +1,64 @@
+div.anglock
+{
+  font-family: "Arial";
+  cursor: pointer;
+  border: 3px dashed #fafafa;
+  padding: 5pt;
+  background-color: #444444; 
+  color: #fafafa;
+  width: 150pt;
+  height: 50pt;
+}
+div.anglock-child
+{
+    position: absolute; 
+    left: 17pt;
+}
+span.anglock-hours
+{
+  font-weight: bolder;
+  font-size: 40pt;
+}
+span.anglock-minutes
+{
+  font-size: 30pt;
+}
+span.anglock-seconds
+{
+
+  font-size: 20pt;
+}
+span.anglock-separator
+{
+   font-size: 20pt;
+   padding: 0 2pt 0 2pt;
+}
+span.anglock-designator 
+{
+  color: #b9b9b9;
+  padding-left: 5pt;
+}
+
+.anglock-hide-add {
+  animation: 1s hide;
+  -webkit-animation: 1s hide;
+}
+
+.anglock-show-add {
+  animation: 1s show;
+  -webkit-animation: 1s show;
+}
+
+.anglock-hide {
+  opacity:0;
+}
+
+.anglock-show {
+  opacity:1;
+}
+
+
+@keyframes hide { from { opacity:1; } to { opacity:0; } }
+@-webkit-keyframes hide { from { opacity:1; } to { opacity:0; } }
+@keyframes show { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes show { from { opacity:0; } to { opacity:1; } }
